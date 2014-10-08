@@ -7,8 +7,8 @@
  * 		    Handles responding to simple words and phrases 
  * </li></ul>
  * This version uses a nested if to handle default responses.
- * @author Laurie White, Jayson Mitch, Kassy Millhime, Avin Patel
- * @version April 2012
+ * @author Jayson Mitch, Kassy Millhime, Avin Patel
+ * @version October 2014
  */
 public class Magpie2
 {
@@ -69,7 +69,7 @@ public class Magpie2
      */
     private String getRandomResponse()
     {
-        final int NUMBER_OF_RESPONSES = 6;
+        final int NUMBER_OF_RESPONSES = 11;
         double r = Math.random();
         int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
         String response = "";
@@ -97,6 +97,26 @@ public class Magpie2
         else if (whichResponse == 5)
         {
             response = "Do you even lift?";
+        }
+        else if (whichResponse == 6)
+        {
+            response = "Bruh";
+        }
+        else if (whichResponse == 7)
+        {
+            response = "You sound stupid";
+        }
+        else if (whichResponse == 8)
+        {
+            response = "This is 'Merica";
+        }
+        else if (whichResponse == 9)
+        {
+            response = "I see you...";
+        }
+        else if (whichResponse == 10)
+        {
+            response = "That's what she said";
         }
 
         return response;
